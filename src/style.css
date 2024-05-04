@@ -1,0 +1,21 @@
+
+body {
+  background: radial-gradient(circle at 10% 20%, rgb(252, 252, 251) 0%, rgb(247, 246, 245) 54.2%, rgba(193, 136, 247, 0.767) 100.3%);
+}
+.main-container {
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    background-color: #4a238a;
+    border-radius: 25px;
+    padding: 10px 30px 20px 30px;
+    text-align: center;
+    color:ivory;
+
+
+    
+}
+.center-icon   {
+    display: center;
+    width: 150px;
+}

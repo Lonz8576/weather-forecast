@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <title>Future Forecast 🌦️</title>
-
-
-
 </head>
 
 
 <body>
+    <div class="main-container">
+        <main>
+<header class="city">April 30, Akureyri</header>
+ 
+<div class="box-top">
+    <div class="low-temp" id="low-temp"><span>Low</span></div>
+    <div class="hi-temp" id="hi-temp"><span>High</span></div>
+    <div><img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png" class="center-icon"></div>
+    <div class="description">weather description icon</div>
 
-<h1>Weather Forecast</h1>
+</div>
 
 
+ <form class="search-forecast" id="search-forecast">
+    <input type="search" placeholder="Change Location" required id="location-input" class = "location-input" />
+    <input type="submit" value="Search" class="enter-search" />
+  </form>
 
 
-
-
+  </main>
   <footer>
-    Project coded by Nic Alonso
-  </footer>    
+    Project coded by
+    <a href="https://github.com/Lonz8576" target="_blank"> Nic Alonso
+    </a> and open sourced with
+    <a href="https://github.com/Lonz8576/weather-forecast" target="_blank"> GitHub</a> website hosted by
+    <a href="https://app.netlify.com/sites/week8forecast/overview" target="_blank"> Netlify</a>
+  </footer> 
+   </div>
+<script src="src/script.js"></script>
 </body>
 </html>
