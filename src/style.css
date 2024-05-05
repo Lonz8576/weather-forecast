@@ -2,20 +2,104 @@
 body {
   background: radial-gradient(circle at 10% 20%, rgb(252, 252, 251) 0%, rgb(247, 246, 245) 54.2%, rgba(193, 136, 247, 0.767) 100.3%);
 }
+.city {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
 .main-container {
     max-width: 600px;
     display: block;
     margin: auto;
-    background-color: #4a238a;
-    border-radius: 25px;
+    background-color:  #321363dc;
+    border-radius: 10px;
     padding: 10px 30px 20px 30px;
     text-align: center;
     color:ivory;
-
-
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    box-shadow: -22px 28px 23px 4px rgba(38, 37, 37, 0.4);
     
+}
+.hi-temp{
+    font-weight: 200;
+    font-size: 16px;
+}
+.low-temp{
+    font-weight: 200;
+    font-size: 16px;
+}
+.box-top{
+    margin: 15px 15px 15px 15px;
+    background: linear-gradient(220deg, rgb(230, 128, 159) 0%, rgb(139, 102, 241) 100%);
+    border-radius: 30px;
+    padding: 10px;
 }
 .center-icon   {
     display: center;
     width: 150px;
+}
+
+::placeholder {
+    color:rgb(0, 0, 0);
+    font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-weight: 300;
+    text-align: center;
+    font-stretch: expanded;
+    font-size: 18px;
+}
+.location-input {
+    background-color: #b99ce9e7;
+    font-weight: 400;
+    padding:2px 30px 2px 30px;
+    border:ridge;
+    border-radius: 3px;
+    border-color: #b99ce9e7;
+    
+
+}
+.grid-days{
+    margin-top: 20px;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 75px 75px 75px 75px 75px;
+    grid-gap: 8px;
+    align-content: space-evenly;
+    justify-content: center;
+    color:rgba(14, 13, 13);
+
+    
+}
+.col-1 {
+     
+     display: block;
+     border-radius: 10px;
+     background-color: #a06cde;
+}
+.col-1:hover{
+    background-color: rgba(9, 3, 15, 0.623);
+}
+.day-1 {
+    font-size: 16px;
+}
+
+.daily-temps {
+    font-size: 13px;
+}
+.daily-temp-hi{
+    font-weight: 600;
+}
+.daily-temp-low {
+    opacity: 0.7;
+
+}
+
+
+a {
+    font-weight: 600;
+    color: black;
+}
+a:hover{
+    color:#f39add;
 }

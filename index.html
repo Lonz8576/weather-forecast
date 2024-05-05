@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
@@ -12,7 +15,7 @@
 
 <body>
     <div class="main-container">
-        <main>
+        <div>
 <header class="city">April 30, Akureyri</header>
  
 <div class="box-top">
@@ -26,15 +29,30 @@
 
  <form class="search-forecast" id="search-forecast">
     <input type="search" placeholder="Change Location" required id="location-input" class = "location-input" />
-    <input type="submit" value="Search" class="enter-search" />
+    <input type="image" id="image" alt="login" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/125/542/original/location.png?1714870837" value="" class="enter-search" />
   </form>
 
+<div class="grid-days">
+    
+     <div class="col-1" >
+        <div class="day-1">
+            day one
+        </div>
+          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" alt=""
+          width="40" />
+          <div class="daily-temps">
+            <span class="daily-temp-hi">80</span>
+            <span class="daily-temp-low">61</span>
+          </div>
+        </div>
 
+     </div>
+    
+    </div>
   </main>
   <footer>
     Project coded by
-    <a href="https://github.com/Lonz8576" target="_blank"> Nic Alonso
-    </a> and open sourced with
+    <a href="https://github.com/Lonz8576" target="_blank"> Nic Alonso</a> and open sourced with
     <a href="https://github.com/Lonz8576/weather-forecast" target="_blank"> GitHub</a> website hosted by
     <a href="https://app.netlify.com/sites/week8forecast/overview" target="_blank"> Netlify</a>
   </footer> 
