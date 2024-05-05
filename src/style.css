@@ -63,11 +63,12 @@ body {
     margin-top: 20px;
     text-align: center;
     display:grid;
-    grid-template-columns: 75px 75px 75px 75px 75px;
-    grid-gap: 8px;
+    grid-template-columns: 80px 80px 80px 80px 80px;
+    grid-gap: 20px;
     align-content: space-evenly;
     justify-content: center;
     color:rgba(14, 13, 13);
+    padding-bottom: 20px;
 
     
 }
