@@ -4,8 +4,8 @@ body {
 }
 .city {
     font-family: "Tajawal", sans-serif;
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 24px;
 }
 .main-container {
     max-width: 600px;
@@ -22,10 +22,23 @@ body {
     box-shadow: -22px 28px 23px 4px rgba(38, 37, 37, 0.4);
     
 }
-.hi-temp{
-    font-weight: 200;
-    font-size: 16px;
+.main-temp{
+    font-family:"Tajawal", sans-serif;
+    font-size: 38px;
+    font-weight: 600;
 }
+.grid{
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 150px 150px;
+    align-content: space-evenly;
+    justify-content:space-between;
+    grid-gap: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    
+}
+
 .low-temp{
     font-weight: 200;
     font-size: 16px;
@@ -35,12 +48,18 @@ body {
     background: linear-gradient(220deg, rgb(230, 128, 159) 0%, rgb(139, 102, 241) 100%);
     border-radius: 30px;
     padding: 10px;
+    display: block;
 }
 .center-icon   {
-    display: center;
-    width: 150px;
+    
+    margin: 0;
+    align-content:center;
+    min-width: 200px;
 }
+img .center-icon {
+    min-width: 200px;
 
+}
 ::placeholder {
     color:rgb(0, 0, 0);
     font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
@@ -48,16 +67,16 @@ body {
     text-align: center;
     font-stretch: expanded;
     font-size: 18px;
+    background-color: #a06cde;
 }
-.location-input {
+
+
+.city-input {
     background-color: #b99ce9e7;
     font-weight: 400;
-    padding:2px 30px 2px 30px;
     border:ridge;
     border-radius: 3px;
     border-color: #b99ce9e7;
-    
-
 }
 .grid-days{
     margin-top: 20px;
