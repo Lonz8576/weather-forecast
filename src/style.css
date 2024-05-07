@@ -84,11 +84,17 @@ img .center-icon {
     display:grid;
     grid-template-columns: 80px 80px 80px 80px 80px;
     grid-gap: 20px;
-    align-content: space-evenly;
-    justify-content: center;
+    justify-content: space-evenly;
     color:rgba(14, 13, 13);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    
 
+    
+}
+.grid-icon{
+    width: 100%;
+    display: block;
+    margin:0 auto;
     
 }
 .col-1 {
@@ -96,12 +102,14 @@ img .center-icon {
      display: block;
      border-radius: 10px;
      background-color: #a06cde;
+     
 }
 .col-1:hover{
     background-color: rgba(9, 3, 15, 0.623);
 }
 .day-1 {
     font-size: 16px;
+    
 }
 
 .daily-temps {

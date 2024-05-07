@@ -80,24 +80,26 @@ let days = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
 let forecastHtml = "";
 
 
-days.forEach(function(day){
+response.data.daily.forEach(function(day, index) {
+    if (index < 5) {
+
     forecastHtml = forecastHtml +
     `
  <div class="col-1" >
         <div class="days">
-            ${day}
-        </div>
-          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" alt=""
-          width="40" />
+            Tue
+        </div> 
+          <span > <img src="${day.condition.icon_url}" class="grid-icon" /> </span>
           <div class="daily-temps">
-            <span class="daily-temp-hi">80</span>
-            <span class="daily-temp-low">61</span>
+            <span class="daily-temp-hi">${Math.round(day.temperature.maximum)}°</span>
+            <span class="daily-temp-low">${Math.round(day.temperature.minimum)}°</span>
           </div>
         </div>
 
      </div>
     
     </div>`;
+    }
 
 });
 
