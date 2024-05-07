@@ -1,5 +1,6 @@
 
 
+
 function refreshWeather(response) {
     let temperatureElement = document.querySelector("#main-temp");
     let temperature = response.data.temperature.current;
@@ -45,29 +46,27 @@ function handleSearchSubmit(event) {
 
 
 
-let searchBarElement = document.querySelector("#search-bar");
-    searchBarElement.addEventListener("submit", handleSearchSubmit);
-    
-    
     searchCity("San Fransisco");
+    
+    
 
 
 
 
 
 
-
+function formatDay(timestamp) {
+    let date = new Date(timestamp = 1000);
+    let day = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+    
+    return day[date.getDay()];
+}
 
 function getForecast(city){
 
     let apiKey = "2e99ddt6a7e37f7c164ob09d070ab380";
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
     axios(apiUrl).then(displayForecast);
-
-
-
-
-
 
 }
 
@@ -76,10 +75,11 @@ function getForecast(city){
 function displayForecast(response){
 
 
-let days = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
 let forecastHtml = "";
 
 
+
+    
 response.data.daily.forEach(function(day, index) {
     if (index < 5) {
 
@@ -87,21 +87,17 @@ response.data.daily.forEach(function(day, index) {
     `
  <div class="col-1" >
         <div class="days">
-            Tue
+            ${formatDay(day.time)}
         </div> 
-          <span > <img src="${day.condition.icon_url}" class="grid-icon" /> </span>
+           <img src="${day.condition.icon_url}" class="grid-icon" />
           <div class="daily-temps">
             <span class="daily-temp-hi">${Math.round(day.temperature.maximum)}°</span>
             <span class="daily-temp-low">${Math.round(day.temperature.minimum)}°</span>
           </div>
         </div>
-
-     </div>
-    
-    </div>`;
+    `;
     }
-
-});
+    });
 
 let forecastElement = document.querySelector("#grid-daily");
 forecastElement.innerHTML = forecastHtml;
@@ -109,8 +105,10 @@ forecastElement.innerHTML = forecastHtml;
 
 
 
+let searchBarElement = document.querySelector("#search-bar");
+    searchBarElement.addEventListener("submit", handleSearchSubmit);
 
-   
-}
+
 displayForecast();
 
+}
